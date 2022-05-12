@@ -1,0 +1,58 @@
+.avatar {
+    
+    margin-right: 1em;
+    max-width: 80%;
+}
+
+body{
+    padding: 0;
+    margin: 0;
+  }
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+* {
+font-family: 'Roboto Flex', sans-serif;
+}
+
+/* Make all font for all elements blue */
+* {
+    color: rgb(3, 111, 199);
+}
+
+/* overrides * */
+p, a {
+    color: blue;
+}
+
+/* overrides p  */
+p.green {
+    color: green;
+}
+
+/* overrides *, a, p */
+.indigo {
+    color: indigo;
+}
+
+/* overrides a */
+a[href="/"] {
+    color: aquamarine;
+}
+
+/* overrides a */
+a:link,
+a:visited{
+    color: maroon;
+}
+
+/* overrides a:link, a:visited */
+a.indigo:link,
+a.indigo:visited {
+    color: purple;
+}
+
+/* overrides everything */
+#home{
+    color: #efefef; 
+}
