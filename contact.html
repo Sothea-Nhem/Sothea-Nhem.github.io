@@ -1,91 +1,54 @@
 <!DOCTYPE html>
 <html>
     <head>
-       <title>My World</title>
+       <title>Alan Smithee</title>
        <link rel="stylesheet" type="text/css" href="./dist/css/main.css">
+       <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     </head>
     <body>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="resume.html">Resume</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
+        <header>
+            <span class="logo">My WebSite</span>
+            <a id="toggleMenu">Menu<a></a>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="resume.html">Resume</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
 
-        <form action="https://formspree.io/asmithee@mailinator.com" method="POST">
+        <main>
 
-            <div>
-                <input type="hidden" name="_subject" value="New submission!">
-            </div>
+            <h1>Contact Alan Smithee</h1>
+            <form action="https://formspree.io/asmithee@mailinator.com" method="POST">
 
-            <div>
-                <label for="name">Name</label>
-                <input id="name" type="text" name="name">
-            </div>
+                <div>
+                    <input type="hidden" name="_subject" value="New submission!">
+                </div>
 
-            <div>
-                <label for="email">Email</label>
-                <input id="email" type="text" name="_replyto">  
-            </div>
+                <div>
+                    <label for="name">Name</label>
+                    <input id="name" type="text" name="name">
+                </div>
 
-            <div>
-                <label for="message">Message</label>
-                <textarea id="message" name="message"></textarea>
-            </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input id="email" type="text" name="_replyto">  
+                </div>
 
-            <div>
-                <input type="submit" value="Send">
-            </div>
+                <div>
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message"></textarea>
+                </div>
 
-        </form>
+                <div>
+                    <input type="submit" value="Send">
+                </div>
+
+                <input type="hidden" name="_next" value="//microtrain.github.io/thanks.html">
+            </form>
+        </main>
+
     </body>
-
-  <!-- Plain text input -->
-  <div>
-    <em>Sample plain text entry</em>
-    <label for="name">Name</label>
-    <input id="name" name="name" type="text">
-  </div>
-  <!-- Datepicker -->
-  <label for="date">Date</label>
-  <input id="date" name="date" type="date">
-  
-  <!-- Textarea -->
-  <label for="description">Description</label>
-  <textarea id="description" name="description"></textarea>
-  
-  <!-- Picklist-->
-  <label for="pickOne">Choose an option</label>
-  <select id="pickOne" name="pickone">
-    <option>Please Choose an Option</option>
-    <option value="option1">Option 1</option>
-    <option value="option2" selected>Option 2</option>
-    <option value="option3">Option 3</option>
-  </select>
-  
-  <!-- Radio Options -->
-  <fieldset>
-    <legend>Choose yes or No</legend>
-  
-    <label for="r1">Yes</label>
-    <input id="r1" name="yn" value="y" type="radio">
-  
-    <label for="r2">No</label>
-    <input id="r2" name="yn" value="n" type="radio">
-  </fieldset>
-  
-  <!-- Checkbox Options -->
-  <fieldset>
-    <legend>Choose all that apply</legend>
-    <label for="c1">Option 1</label>
-    <input id="c1" name="all" value="0" type="checkbox">
-  
-    <label for="c2">Option 2</label>
-    <input id="c2" name="all" value="1" type="checkbox">
-  </fieldset>
-  
-  <!-- Form Buttons -->
-  <input type="submit" name="submit" value="Submit">
-  <input type="reset" name="reset" value="Reset">    
 </html>
